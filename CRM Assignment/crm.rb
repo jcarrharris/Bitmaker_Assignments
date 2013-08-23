@@ -72,7 +72,7 @@ class CRM
 	end
 end
 
-session = CRM.new("Welcome!") 
+crm_app.new("Welcome!") 
 # synonymous with new, calling new is calling initialize
 crm_app.main_menu
 

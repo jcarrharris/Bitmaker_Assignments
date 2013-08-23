@@ -11,7 +11,7 @@ class Database
 	end
 
 	def self.contacts
-		@contacts.select {|contact| contact.id == contact_id.to_i}	end
+		@contacts.select {|contact| contact.id == contact_id.to_i}
 	end
 
 	def self.display_all
