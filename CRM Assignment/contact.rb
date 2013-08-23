@@ -1,16 +1,10 @@
-class Contact
-	def id =(zebra)
-	@id = zebra
-	end
+lass Contact
+  attr_accessor :first_name, :last_name, :email, :note, :id
 
-	#a getter (*get* the value of an attirbute)
-	def email
-		@email
-	end
-
-	#a setter (*set* the value of an attribute)
-	def note(note)
-		@note = note
-	end
-end
-
+  	def initialize(first_name, last_name, email, note="")
+  		@first_name = first_name
+  		@last_name = last_name
+  		@email = email
+  		@note = note
+  	end
+  end
