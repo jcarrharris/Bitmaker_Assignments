@@ -34,7 +34,6 @@ weatherboy = Weatherboy.new(90210)
      w.temp_f
      => "31"
 	end
-end
 
 # Hello, Bot!
 until irc_server.eof?  do
