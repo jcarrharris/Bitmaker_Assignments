@@ -32,7 +32,8 @@ helloWorld("de");
 function assignGrade(score) {
 	for (charnum= 65; charnum <= 90; charnum ++) {
 		var s = String.fromCharCode(charnum);
-
+		document.write(s)
+		
 		if (s == score) {
 			document.write("My score is: " + score);
 		}
