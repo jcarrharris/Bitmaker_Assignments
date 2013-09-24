@@ -32,8 +32,8 @@ helloWorld("de");
 function assignGrade(score) {
 	for (charnum= 65; charnum <= 90; charnum ++) {
 		var s = String.fromCharCode(charnum);
-		document.write(s)
-		
+		// document.write(s)
+
 		if (s == score) {
 			document.write("My score is: " + score);
 		}
@@ -44,8 +44,19 @@ assignGrade("B")
 
 // Exercise 4
 
-// function pluralizer(noun, number) {
+function pluralizer(noun, number) {
+	
+	if (number > 1) {
+		document.write(number + " " + noun + "s");
+	}
+	else 
+	{
+		document.write(number + noun);
+	}
+}
 
+pluralizer("orange", 4);
+pluralizer("fruit", 1);
 
 // }
 
