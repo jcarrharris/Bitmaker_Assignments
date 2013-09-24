@@ -6,14 +6,14 @@
 // Hint: you can use .css
 
 $(document).ready(function(){
-	$('#target').css ({
-		'background-color': 'blue'
-	});
+	// $('#target').css ({
+	// 	'background-color': 'blue'
+	// });
 
 
 // EXERCISE: Change Parent
 
-	var title = $('#target').text("title");
+//	var title = $('#target').find("span").text("title");
 
 // Change the text in the span, a child of "#target"
 // Hint: you can use .text
@@ -23,32 +23,48 @@ $(document).ready(function(){
 // Create a clone of the span in "#target" and position it under the origin.
 // Hint: you can use .clone and .insertAfter
 
-$('#target').clone().insertAfter("#target");
+// $('#target span').clone().insertAfter('#target');
 
 // EXERCISE: Use Filter
 
 // Change background color of the second ".target"
 // Hint: you can use .eq and .css
 
+// $('.target').eq(2).css("background-color", "blue");
+
 // EXERCISE: Disable Buttons
 
 // Disable the button
 // Hint: you will have to select the button and can use .attr
+
+// $('.target button').prop("disabled", "disabled");
+// $('.target button').attr("disabled", "disabled");
+
 
 // EXERCISE: Uncheck CheckBoxes
 
 // Uncheck all checkboxes using jQuery
 // Hint: you will have to select the input and can use .removeAttr
 
+// $('.target input').removeAttr("checked", "checked");
+
+
+
 // EXERCISE: Change Parent
 
 // Move "#child" from "#parent1" to "#parent2"
 // Hint: you can use .appendTo
 
+$('#parent1').appendTo("#parent2");
+
 // EXERCISE: Select A Option in A Select Box
 
 // Select the second option in the selectbox by script
 // Hint: you will have to select the option and can use .eq and .attr
+
+
+
+
 
 // EXERCISE: Change Size
 
